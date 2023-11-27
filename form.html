@@ -13,10 +13,14 @@
             background-color: rgba(0, 0, 0, 0.4);
             border-radius: 15px;
             width: 100%;
+
         }
+
         fieldset {
             border: 3px solid black;
+            padding: 30px;
         }
+
         legend {
             border: 1px solid black;
             padding: 10px;
@@ -25,9 +29,12 @@
             border-radius: 15px;
             color: cyan;
         }
+
+
         .inputBox {
             position: relative;
         }
+
         .inputUser {
             background: none;
             border: none;
@@ -38,6 +45,7 @@
             width: 100%;
             letter-spacing: 2px;
         }
+
         .labelInput {
             position: absolute;
             top: 0px;
@@ -45,12 +53,14 @@
             pointer-events: none;
             transition: .5s;
         }
-        .inputUser:focus ~ .labelInput,
-        .inputUser:valid ~ .labelInput{
+
+        .inputUser:focus~.labelInput,
+        .inputUser:valid~.labelInput {
             top: -20px;
             font-size: 12px;
             color: limegreen;
         }
+
         #data_nascimento {
             border: none;
             padding: 8px;
@@ -58,6 +68,7 @@
             outline: none;
             font-size: 15px;
         }
+
         #submit {
             background-image: linear-gradient(to right, rgb(0, 255, 255), rgb(194, 12, 12));
             width: 100%;
@@ -68,6 +79,7 @@
             cursor: pointer;
             border-radius: 10px;
         }
+
         #submit:hover {
             background-image: linear-gradient(to right, rgb(0, 200, 200), rgb(186, 0, 0));
         }
@@ -83,7 +95,8 @@
             <a href="index.html">Início</a>
             <a href="form.html">Formulário</a>
             <a href="discografia.html">Discografia</a>
-            <a href="explicação.html">Por quê?</a>
+            <a href="explicacao.html">Por quê?</a>
+            <a href="galeria.html">Galeria</a>
         </div>
         <div class="redes">
             <a href="https://twitter.com/cametek" target="_blank"><img src="img/Twitter.png" alt=""></a>
@@ -102,11 +115,21 @@
                 <br>
                 <div class="inputBox">
                     <input type="text" name="nome" id="nome" class="inputUser" required>
-                    <label for="nome" class="labelInput">Apelido</label>
+                    <label for="nome" class="labelInput">Nome</label>
                 </div>
                 <br><br>
                 <div class="inputBox">
-                    <input type="text" name="email" id="email" class="inputUser" required>
+                    <input type="text" name="sobrenome" id="sobrenome" class="inputUser" required>
+                    <label for="sobrenome" class="labelInput">Sobrenome</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="apelido" id="apelido" class="inputUser" required>
+                    <label for="apelido" class="labelInput">Apelido</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="email" name="email" id="email" class="inputUser" required>
                     <label for="email" class="labelInput">Email</label>
                 </div>
                 <br><br>
@@ -128,8 +151,8 @@
                 <input type="radio" name="genero" value="outro" id="outro" required>
                 <label for="outro">Outro</label>
                 <br><br>
-                    <label for="data_nascimento">Data de Nascimento:</label>
-                    <input type="date" name="data_nascimento" id="data_nascimento" required>
+                <label for="data_nascimento">Data de Nascimento:</label>
+                <input type="date" name="data_nascimento" id="data_nascimento" required>
                 <br><br>
                 <div class="inputBox">
                     <input type="text" name="cidade" id="cidade" class="inputUser" required>
@@ -145,13 +168,29 @@
                     <input type="text" name="pais" id="pais" class="inputUser" required>
                     <label for="pais" class="labelInput">País</label>
                 </div>
+                <br>
+                <p>Desde quando você conhece o Camellia?</p>
+                <input type="radio" name="conhecer" value="" id="2023" required>
+                <label for="2023">2023</label>
+                <br>
+                <input type="radio" name="conhecer" value="2022" id="2022" required>
+                <label for="2022">2022</label>
+                <br>
+                <input type="radio" name="conhecer" value="2021" id="2021" required>
+                <label for="2021">2021</label>
+                <br>
+                <input type="radio" name="conhecer" value="2020" id="2020" required>
+                <label for="2020">2020 ou antes</label>
+                <br><br>
+                <input type="checkbox" value="receber" id="receber" required>
+                <label for="receber">Desejo receber emails sobre novidades do Camellia</label>
                 <input type="submit" id="submit">
             </fieldset>
         </form>
     </div>
     <footer>
         Feito por Caio Eduardo. © 2023 Todos os direitos reservados. &nbsp;
-        <a href="https://pt.wikipedia.org/wiki/Camellia_(compositor)">Referências</a>
+        <a href="https://pt.wikipedia.org/wiki/Camellia_(compositor)" target="_blank">Referências</a>
     </footer>
 </body>
 

@@ -146,3 +146,15 @@ footer {
   align-items: center;
 }
 
+.containerImagens {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20%, 300px));
+  grid-template-rows: auto;
+  gap: 30px;
+  justify-content: center;
+  padding: 40px
+}
+
+.containerImagens > div > img {
+  max-width: 100%;
+}
